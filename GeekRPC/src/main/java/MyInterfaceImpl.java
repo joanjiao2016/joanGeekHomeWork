@@ -18,8 +18,8 @@ public class MyInterfaceImpl  implements MyInterface {
 
 
     @Override
-    public String getName(String stuNumber) {
-        return  students.get(stuNumber);
+    public String findName(int studentId) {
+        return  students.get(studentId);
     }
 
     @Override

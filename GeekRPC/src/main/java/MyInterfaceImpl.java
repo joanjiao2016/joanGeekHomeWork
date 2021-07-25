@@ -4,9 +4,9 @@ import java.io.IOException;
 import java.util.HashMap;
 
 public class MyInterfaceImpl  implements MyInterface {
-    HashMap<String, String> students = new HashMap<String, String>();
+    HashMap<Long, String> students = new HashMap<Long, String>();
     public MyInterfaceImpl() {
-       students.put("20210123456789","心心");
+       students.put(20210123456789,"心心");
 
     }
      //实现加法
@@ -18,7 +18,7 @@ public class MyInterfaceImpl  implements MyInterface {
 
 
     @Override
-    public String findName(int studentId) {
+    public String findName(long studentId) {
         return  students.get(studentId);
     }
 
